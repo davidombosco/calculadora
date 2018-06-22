@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Super Calculator 3000</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container calculator">
+		<div class="row text-center justify-content-center">
+			<div class="col-12">
+				<input type="number" id="elem-1"> <!--Caixa de texto que só aceita números-->
+			</div>
+
+			<div class="col-12">
+				<div class='container operations'>
+					<div class= 'row align-items-center text-center'>
+						<div class='col operation'.> 
+						<!--name: indica qual o grupo do botão... quando dois botoes têm o mesmo name, só um deles pode ser selecionado-->
+						<!--value: define o valor que o botao representa. Como não aparece escrito ao lado do botão, há a necessidade de usar o label para isso-->
+						<!--checked: indica qual botão vai ser automaaticamente selecionado quando se abre uma página-->
+							<input type="radio" id="sum-operation" value="+" name="operation" checked> <!--radio button-->
+							<label for="sum-operation" >+</label> <!--for: se a pessoa clicar no label, vai selecionar o radio button correspondente-->
+						</div>
+						<div class='col operation'>
+							<input type="radio" id="subtract-operation" value="-" name="operation">
+							<label for="subtract-operation">-</label>
+						</div>
+						<div class='col operation'>
+							<input type="radio" id="multiply-operation" value="*" name="operation">
+							<label for="multiply-operation">&times</label>
+						</div>
+						<div class='col operation'>
+							<input type="radio" id="divide-operation" value="/" name="operation">
+							<label for="divide-operation">&divide</label>
+						</div>
+						<div class='col operation'>
+							<input type="radio" id="percent-operation" value="%" name="operation">
+							<label for="percent-operation">%</label>
+						</div>
+						<div class='col operation'>
+							<input type="radio" id="potentiation-operation" value="e" name="operation">
+							<label for="potentiation-operation">*</label>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="col-12">
+				<input type="number" id="elem-2"> 
+			</div>
+
+			<div class="col-12">
+				<button id="calculate-button">=</button>
+			</div>
+
+			<div class="col-12">
+				<h2 id="result"></h2>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script> <!--vincula o documento java ao html-->
+</body>
+</html>
