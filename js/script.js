@@ -10,8 +10,8 @@ document.getElementById('calculate-button').onclick = function() {
 	let operation=choice.value;
 	let operationResult=getResult(val1,val2,operation);
 
-	let result=document.getElementById("result");
-	resul.innerHTML = operationResult
+	let resultElement=document.getElementById("result");
+	resultElement.innerHTML = operationResult;
 }
 
 function getResult(val1,val2,operation) {
