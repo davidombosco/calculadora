@@ -43,25 +43,25 @@ function getResult(val1,val2,operation) {
 		document.getElementById("elem-1").focus();
 	}
 	else if (operation==="+") {
-		result.innerText=sum;
+		return sum;
 	}
 	else if (operation==="-") {
-		result.innerText=sub;
+		return sub;
 	}
 	
 	else if (operation==="*") {
-		result.innerText=mult;
+		return mult;
 	}
 	
 	else if (operation==="/") {
-		result.innerText=div;
+		return div;
 	}
 
 	else if (operation==="%") {
-		result.innerText=per;
+		return per;
 	}
 
 	else if (operation==="e") {
-		result.innerText=pot;
+		return pot;
 	}
 }
